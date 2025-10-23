@@ -1,15 +1,19 @@
 ### Variables ###
 
+# TIPO STRING:
 my_string_variable = "My String variable"
 print(my_string_variable)
 
+# TIPO INT:
 my_int_variable = 5
 print(my_int_variable)
 
+# TIPO STRING (convertido desde int):
 my_int_to_str_variable = str(my_int_variable)
 print(my_int_to_str_variable)
 print(type(my_int_to_str_variable))
 
+# TIPO BOOLEAN:
 my_bool_variable = False
 print(my_bool_variable)
 
@@ -25,7 +29,7 @@ name, surname, alias, age = "Gema", "Rodriguez", 'Gemita', 37
 print("Me llamo:", name, surname, ". Mi edad es:",
       age, ". Y mi alias es:", alias)
 
-# Inputs
+# Inputs: PEDIR DATOS POR CONSOLA
 name = input('¿Cuál es tu nombre? ')
 age = input('¿Cuántos años tienes? ')
 print(name)
