@@ -50,14 +50,4 @@ print(language_slice)
 reversed_language = language[::-1]
 print(reversed_language)
 
-# Funciones del lenguaje
 
-print(language.capitalize())
-print(language.upper())
-print(language.count("t"))
-print(language.isnumeric())
-print("1".isnumeric())
-print(language.lower())
-print(language.lower().isupper())
-print(language.startswith("Py"))
-print("Py" == "py")  # No es lo mismo
