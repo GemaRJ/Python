@@ -47,3 +47,10 @@ address = True
 address = 5
 address = 1.2
 print(type(address))
+
+# POSIBILIDAD DE CAMBIAR ENTRE TIPOS LAS VARIABLES
+
+numeroDecimal = 34.87
+numeroEntero = int(numeroDecimal)
+print(f"El número decimal es {numeroDecimal} y el número entero es{numeroEntero}")
+print(type(numeroDecimal))
