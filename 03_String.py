@@ -50,4 +50,3 @@ print(language_slice)
 reversed_language = language[::-1]
 print(reversed_language)
 
-
