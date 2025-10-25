@@ -36,6 +36,7 @@ print(f"El tipo de dato de num1 es: {type(num1)}")
 
 
 # 3. Calcular y mostrar:
+
 # El mayor y el menor.
 
 numMayor = max(num1, num2, num3)
@@ -68,8 +69,15 @@ print(f"La resta de los tres números elegidos, es: {numResta}")
 numMultiplicacion = num1 * num2 * num3
 print(f"La multiplicación de los tres números elegidos, es: {numMultiplicacion}")
 
+# El cociente real de dividir la suma entre 3 (/).
+
+numDivisionReal = numSuma / 3
+
+print(f"El cociente real de la suma ({numSuma}) entre 3, es: {numDivisionReal}")
+
 # La división entera (//) de la suma entre 3.
 
 numDivisionEntera = numSuma // 3
 
 print(f"La división entera de la suma ({numSuma}) entre 3, es: {numDivisionEntera}")
+
