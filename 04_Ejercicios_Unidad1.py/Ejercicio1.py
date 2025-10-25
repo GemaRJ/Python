@@ -81,3 +81,5 @@ numDivisionEntera = numSuma // 3
 
 print(f"La división entera de la suma ({numSuma}) entre 3, es: {numDivisionEntera}")
 
+# 4. Convertir la media aritmética a entero (con int) y mostrarla.
+
