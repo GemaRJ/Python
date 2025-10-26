@@ -70,7 +70,6 @@ for i in range(1, 3):
 #  MOSTRAR LOS DATOS INTRODUCIDOS
 print("\nEl nombre y puntuación de cada jugador, son:")
 print(f"Jugador1: {jugadores[0]['nombre']} y {jugadores[0]['puntuacion']}")
-# CORRECCIÓN: Este 'print' ahora está en su propia línea
 print(f"Jugador2: {jugadores[1]['nombre']} y {jugadores[1]['puntuacion']}")
 
 
