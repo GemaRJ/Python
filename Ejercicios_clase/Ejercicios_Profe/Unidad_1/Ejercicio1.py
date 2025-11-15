@@ -33,7 +33,8 @@ num3 = int(input("Introduce el tercer número:"))
 
 print(f"Los números elegidos por el usuario, son: {num1}, {num2} y {num3}")
 print(f"El tipo de dato de num1 es: {type(num1)}")
-
+print(f"El tipo de dato de num1 es: {type(num2)}")
+print(f"El tipo de dato de num1 es: {type(num3)}")
 
 # 3. Calcular y mostrar:
 
