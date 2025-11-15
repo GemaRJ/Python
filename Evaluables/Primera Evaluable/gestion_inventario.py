@@ -12,7 +12,7 @@ def cargar_inventario():
 
     # Si el archivo no existe o está vacío, se crea con un inventario inicial.
     if not os.path.exists(ARCHIVO) or os.stat(ARCHIVO).st_size == 0:
-        print("No existe inventario.txt o está vacío. Se creamos un inventario nuevo.")
+        print("No existe inventario.txt o está vacío. Creamos un inventario nuevo.")
         inventario_inicial = {
             "Portátil": [800, 10],
             "Teléfono": [1300, 1],
