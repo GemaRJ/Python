@@ -1,0 +1,4 @@
+Portátil,800,10
+Teléfono,1300,1
+Tablet,200.0,8
+Auriculares,50.99,0
