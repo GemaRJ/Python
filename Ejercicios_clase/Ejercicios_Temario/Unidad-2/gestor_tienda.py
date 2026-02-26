@@ -1,50 +1,57 @@
-# Lista global para almacenar los productos (Estructura de datos persistente en ejecución)
+# --- PROGRAMA DE GESTIÓN DE TIENDA ---
+
+# Lista global para almacenar los productos (RA 4: Tipos avanzados de datos)
 inventario = []
 
 def agregar_producto():
+    """Registra un producto con nombre y precio."""
     nombre = input("Nombre del producto: ")
     try:
         precio = float(input(f"Precio de '{nombre}': "))
-        # Guardamos la información como un diccionario dentro de la lista
+        # Guardamos como diccionario para organizar la información
         inventario.append({"nombre": nombre, "precio": precio})
-        print("Producto agregado con éxito.")
+        print(f"Producto '{nombre}' agregado con éxito.")
     except ValueError:
-        print("Error: El precio debe ser un número.")
+        print("Error: El precio debe ser un número decimal (ej: 10.5).")
 
 def mostrar_productos():
+    """Muestra todos los productos en el inventario."""
     if not inventario:
         print("El inventario está vacío.")
     else:
-        print("\n--- PRODUCTOS DISPONIBLES ---")
+        print("\n--- INVENTARIO DISPONIBLE ---")
         for p in inventario:
-            print(f"- {p['nombre']}: {p['precio']}€")
+            print(f"Producto: {p['nombre']} | Precio: {p['precio']}€")
 
 def buscar_producto():
-    nombre_buscar = input("¿Qué producto buscas?: ").lower()
+    """Busca un producto por nombre y muestra su precio."""
+    busqueda = input("Introduce el nombre del producto a buscar: ").lower()
     encontrado = False
     for p in inventario:
-        if p['nombre'].lower() == nombre_buscar:
-            print(f"El precio de '{p['nombre']}' es {p['precio']}€.")
+        if p['nombre'].lower() == busqueda:
+            print(f"Resultado: {p['nombre']} cuesta {p['precio']}€.")
             encontrado = True
             break
     if not encontrado:
-        print("Producto no encontrado.")
+        print("Lo sentimos, el producto no existe en la tienda.")
 
 def calcular_total():
-    # Usamos un acumulador para el precio total
+    """Suma el precio de todos los productos del inventario."""
+    # Usamos una expresión generadora para sumar los precios
     total = sum(p['precio'] for p in inventario)
-    print(f"El valor total del inventario es: {total}€")
+    print(f"El valor total de todos los productos es: {total}€")
 
 def menu():
+    """Gestiona el flujo principal y el menú de usuario (RA 2: Estructuras de control)."""
     while True:
-        print("\n--- GESTIÓN DE TIENDA ---")
+        print("\n=== MENÚ DE LA TIENDA ===")
         print("1. Agregar producto")
-        print("2. Mostrar productos")
-        print("3. Buscar producto")
+        print("2. Mostrar todos los productos")
+        print("3. Buscar producto por nombre")
         print("4. Calcular precio total")
         print("5. Salir")
         
-        opcion = input("Selecciona una opción: ")
+        opcion = input("Selecciona una opción (1-5): ")
         
         if opcion == "1":
             agregar_producto()
@@ -55,11 +62,11 @@ def menu():
         elif opcion == "4":
             calcular_total()
         elif opcion == "5":
-            print("Saliendo del programa...")
+            print("Cerrando el sistema... ¡Buen día!")
             break
         else:
-            print("Opción no válida.")
+            print("Opción no válida, intenta de nuevo.")
 
-# Punto de entrada al programa
+# Ejecución del programa
 if __name__ == "__main__":
     menu()
