@@ -1,6 +1,6 @@
 # --- PROGRAMA DE GESTIÓN DE TIENDA ---
 
-# Lista global para almacenar los productos (RA 4: Tipos avanzados de datos)
+# Lista global para almacenar los productos
 inventario = []
 
 def agregar_producto():
