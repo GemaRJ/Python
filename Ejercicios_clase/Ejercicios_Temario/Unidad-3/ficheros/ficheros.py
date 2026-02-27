@@ -13,7 +13,7 @@ errores (como errores de conversión o si el fichero original no existe). """
 def leer_notas():
     try:
         # Abrimos el fichero en modo lectura
-        with open("notas.txt", "r", encoding="utf-8") as fichero:
+        with open("notas_validas.txt", "r", encoding="utf-8") as fichero:
             
             for linea in fichero:
                 linea = linea.strip()  # Eliminamos espacios y saltos de línea
