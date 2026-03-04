@@ -1,39 +1,53 @@
-# Repositorio de Aprendizaje de Python 🐍
+# Python – Proyectos Académicos y Personales
 
-Este repositorio contiene una colección de scripts de Python, diseñados como material de estudio y ejercicios prácticos para aprender los fundamentos y conceptos clave del lenguaje.
+Este repositorio contiene **ejercicios y proyectos realizados durante mi formación en Desarrollo de Aplicaciones Web (DAW)** y programación en Python, incluyendo teoría, prácticas diarias y proyectos personales.
 
-## Estructura del Repositorio
-
-El repositorio está organizado en una serie de archivos `.py`, cada uno enfocado en un concepto específico de Python.
-
-### Conceptos Básicos
-
-Estos archivos cubren los pilares fundamentales de Python, ordenados de forma progresiva:
-
-* `00_Introduccion.py`: Introducción básica al lenguaje.
-* `01_Variables.py`: Declaración y uso de variables.
-* `02_Operadores.py`: Operadores aritméticos, lógicos y de comparación.
-* `03_String.py`: Manipulación de cadenas de texto.
-* `04_Listas.py`: Creación y manejo de listas.
-* `05_Tuplas.py`: Uso de tuplas (colecciones inmutables).
-* `06_Condicionales.py`: Estructuras de control `if`, `elif`, `else`.
-* `07_Bucles.py`: Bucles `for` y `while`.
-* `08_Funciones.py`: Definición y llamada de funciones.
-* `09_Clases.py`: Fundamentos de la Programación Orientada a Objetos (POO).
-* `10_Excepciones.py`: Manejo de errores y excepciones (`try`, `except`).
-* `11_diccionarios.py`: Uso de diccionarios (pares clave-valor).
-* `11_metodos.py`: Métodos comunes en Python.
-* `12_Conjuntos_Set.py`: Trabajo con conjuntos (`set`).
-
-### Ejercicios
-
-Archivos dedicados a la práctica de los conceptos aprendidos:
-
-* `01_Ejercicio.py`
-* `02_Ejercicio.py`
-* `03_Ejercicio.py`
-* `04_Ejercicios_Unidad1.py`
+Incluye **temario, prácticas y proyectos personales**, mostrando la aplicación práctica de los conocimientos adquiridos.
 
 ---
 
-¡Gracias por visitar mi perfil! 😊
+## 🌟 Tecnologías y herramientas
+
+- **Lenguaje:** Python  
+- **Frameworks y librerías:** Django, Flask (en aprendizaje), pandas, matplotlib, scikit-learn  
+- **Conceptos clave aplicados:** Orientación a objetos, control de ficheros, manejo de estructuras de datos, lógica de negocio  
+- **Control de versiones:** Git y GitHub  
+
+---
+
+## 📄 Temario / Documentos
+
+Accede a la documentación teórica y ejemplos de Python:  
+[📂 Carpeta Temario](https://github.com/GemaRJ/Python/tree/main/Temario)
+
+> Cada archivo contiene teoría y ejemplos prácticos listos para ejecutar y estudiar.
+
+---
+
+## 📝 Prácticas / Ejercicios diarios
+
+Ejercicios que reflejan **práctica diaria y aprendizaje progresivo de Python**, incluyendo:  
+- Funciones y estructuras de control  
+- Control de ficheros (lectura/escritura)  
+- Orientación a objetos y clases  
+
+[📂 Carpeta Prácticas](https://github.com/GemaRJ/Python/tree/main/Pr%C3%A1cticas)
+
+---
+
+## 🚀 Proyectos Personales
+
+Carpeta con aplicaciones completas desarrolladas durante la formación, demostrando **lógica, control de flujo, interacción con datos y aplicación práctica de Python**:  
+[📂 PROYECTOS PERSONALES](https://github.com/GemaRJ/Python/tree/main/PROYECTOS%20PERSONALES)
+
+### Proyectos destacados
+
+- **Cafetería:** Gestión completa de pedidos y operaciones, lógica de negocio aplicada.  
+- **Inventario Tienda con clases:** Ejemplo avanzado de orientación a objetos para gestionar productos.  
+- **Inventario Tienda:** Gestión de productos y stock usando Python y ficheros.  
+- **Juego Adivinanza:** Proyecto interactivo de lógica y control de flujo.  
+- **Reservas Centro Deportivo:** Simulación de gestión de reservas, aplicando estructuras de datos y control de flujo.  
+
+> Todos los proyectos muestran aplicación de conceptos clave, creatividad y capacidad de desarrollar programas funcionales en Python.
+
+---
