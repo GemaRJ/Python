@@ -8,7 +8,7 @@ from crud import (
 
 def mostrar_menu():
     """Imprime el menú por pantalla"""
-    print("\n====== GESTIÓN DE SOCIO ======")
+    print("\n====== GESTIÓN DE SOCIOS ======")
     print("1. Crear tabla")
     print("2. Insertar socio")
     print("3. Mostrar socios")
@@ -16,9 +16,8 @@ def mostrar_menu():
     print("5. Eliminar socio")
     print("6. Salir")
 
-
-    def main():
-    
+def main():
+    """Función principal del programa"""
     while True:
         mostrar_menu()
         opcion = input("Seleccione una opción: ")
@@ -38,7 +37,6 @@ def mostrar_menu():
             break
         else:
             print("Opción no válida. Intente de nuevo.")
-
 
 # Punto de entrada del programa
 if __name__ == "__main__":

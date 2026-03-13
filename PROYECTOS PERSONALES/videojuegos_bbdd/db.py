@@ -1,31 +1,25 @@
-import mysql.connector  # Conector oficial de MySQL para Python
-import os               # Permite acceder a variables del sistema
-from dotenv import load_dotenv # Carga las variables de entorno desde un archivo .env
-from sqlite3 import connect # Conector para SQLite
+import mysql.connector
+import os
+from dotenv import load_dotenv
 
+# Cargamos las variables del archivo .env
 load_dotenv()
 
-def connect_mysql():
-    """Establece una conexión a la base de datos MySQL utilizando las variables de entorno."""
+def obtener_conexion():
+    """
+    Crea y devuelve una conexión a la base de datos del club.
+    Si ocurre un error, devuelve None.
+    """
     try:
         conexion = mysql.connector.connect(
-            host=os.getenv('MYSQL_HOST'),
-            user=os.getenv('MYSQL_USER'),
-            password=os.getenv('MYSQL_PASSWORD'),
-            database=os.getenv('MYSQL_DATABASE')
+            host=os.getenv("DB_HOST", "127.0.0.1"),
+            user=os.getenv("DB_USER", "root"),
+            password=os.getenv("DB_PASSWORD", ""),
+            database=os.getenv("DB_NAME", "videojuegos"),
+            use_pure=True  # ¡Vital para evitar que Python 3.14 se cierre de golpe!
         )
-        print("Conexión a MySQL exitosa")
-        return conexion
-    except mysql.connector.Error as err:
-        print(f"Error al conectar a MySQL: {err}")
         return conexion
 
-def connect_sqlite():
-    """Establece una conexión a la base de datos SQLite."""
-    try:
-        connection = connect(os.getenv('SQLITE_DB'))
-        print("Conexión a SQLite exitosa")
-        return connection
-    except Exception as err:
-        print(f"Error al conectar a SQLite: {err}")
+    except mysql.connector.Error as error:
+        print("Error al conectar a la base de datos:", error)
         return None
