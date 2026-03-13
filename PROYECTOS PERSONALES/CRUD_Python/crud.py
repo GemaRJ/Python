@@ -46,7 +46,7 @@ def insertar_alumno():
 
     cursor = conexion.cursor()
 
-    # Consulta parametrizada (evita SQL Injection de los hackers)
+    # Consulta parametrizada (evita SQL Injection de los hackers<)
     cursor.execute(
         "INSERT INTO alumnos (nombre, edad, curso) VALUES (%s, %s, %s)",
         (nombre, edad, curso)
